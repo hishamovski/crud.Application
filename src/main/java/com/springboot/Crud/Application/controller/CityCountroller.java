@@ -36,7 +36,7 @@ public class CityCountroller {
         return cityService.addCity(city);
     }
     @DeleteMapping("/{id}")
-    private String delete(@PathVariable UUID id) {
-        return cityService.deleteById(id);
+    private String delete(@PathVariable UUID cityId) {
+        return cityService.deleteById(cityId);
     }
 }
