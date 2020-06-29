@@ -18,4 +18,20 @@ public class City {
     @GeneratedValue
     private UUID cityId;
     private String name;
+
+    public UUID getCityId() {
+        return cityId;
+    }
+
+    public void setCityId(UUID cityId) {
+        this.cityId = cityId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

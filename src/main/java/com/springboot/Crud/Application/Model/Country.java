@@ -20,4 +20,28 @@ public class Country {
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "country_id", referencedColumnName = "countryId")
     private List <City> cities;
+
+    public UUID getCountryId() {
+        return countryId;
+    }
+
+    public void setCountryId(UUID countryId) {
+        this.countryId = countryId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<City> getCities() {
+        return cities;
+    }
+
+    public void setCities(List<City> cities) {
+        this.cities = cities;
+    }
 }
